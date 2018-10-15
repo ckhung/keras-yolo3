@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys, argparse, json, re
 from yolo import YOLO
 from PIL import Image
@@ -6,7 +8,10 @@ FLAGS = None
 
 if __name__ == '__main__':
     # class YOLO defines the default value, so suppress any default here
-    parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
+    parser = argparse.ArgumentParser(
+        argument_default=argparse.SUPPRESS,
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
     '''
     Command line options
     '''
