@@ -4,7 +4,6 @@ RUN pip3 install pillow matplotlib opencv-python
 RUN apt -y update
 RUN apt install -y feh
 RUN ln -s /usr/bin/feh /usr/bin/display
+RUN git clone https://github.com/ckhung/keras-yolo3.git /keras-yolo3
 
 WORKDIR /srv
-RUN git clone https://github.com/ckhung/keras-yolo3.git
-
