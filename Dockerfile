@@ -5,3 +5,6 @@ RUN apt -y update
 RUN apt install -y feh
 RUN ln -s /usr/bin/feh /usr/bin/display
 
+WORKDIR /srv
+RUN git clone https://github.com/ckhung/keras-yolo3.git
+
