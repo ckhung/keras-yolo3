@@ -1,3 +1,4 @@
+# https://newtoypia.blogspot.com/2018/10/yolo.html
 FROM gw000/keras:2.1.4-py3-tf-cpu
 
 RUN pip3 install pillow matplotlib opencv-python
